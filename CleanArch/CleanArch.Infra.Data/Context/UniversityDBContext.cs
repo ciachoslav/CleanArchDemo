@@ -2,8 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
-
+using CleanArch.Domain.Models;
 
 namespace CleanArch.Infra.Data.Context
 {
@@ -12,6 +11,6 @@ namespace CleanArch.Infra.Data.Context
         public UniversityDBContext(DbContextOptions options) : base(options)
             {                
             }
-        //public  DbSet<Course> Courses { get; set; }
+       public  DbSet<Course> Courses { get; set; }
     }
 }
